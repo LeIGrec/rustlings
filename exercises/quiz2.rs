@@ -23,14 +23,15 @@
 /*
 WRITE UP:
 
-Pour la fonction on prendre en paramètre un vecteur de tuples (String, Command) et on retournera un vecteur de String.
-Lire le code en dessous pour le comprendre et l'ajouter
+Ce code définit une énumération Command qui représente différentes opérations à appliquer sur des chaînes de caractères.
 
-Pour la déclaration de la variable output, on veut juste un vec de String car on va le return à la fin de la fonction.
+Uppercase : transforme la chaîne en majuscules
 
-Pour le match, on va regarder le command et appliquer les actions.
+Trim : supprime les espaces en début et fin de chaîne
 
-Append est un peu tricky, on va utiliser la méthode repeat() pour répéter "bar" n fois.
+Append(usize) : ajoute une chaîne "bar" répétée n fois à la fin de la chaîne
+
+Le code définit également un module my_module qui contient une fonction transformer prenant en entrée un vecteur de tuples (String, Command) et renvoyant un vecteur de String correspondant à l'application des commandes sur les chaînes.
 
 */
 
