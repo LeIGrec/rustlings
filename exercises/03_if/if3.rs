@@ -2,17 +2,22 @@
 //
 // Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+/*
+WRITE UP:
+
+La valeur que "identifier" doit prendre lier au if else de "habitat". 
+Donc soit 1, 2 ou 3. Pas de float ou de STR, il y a pas meilleur solution.
+*/
 
 pub fn animal_habitat(animal: &str) -> &'static str {
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
-        2.0
+        2
     } else if animal == "snake" {
         3
     } else {
-        "Unknown"
+        0
     };
 
     // DO NOT CHANGE THIS STATEMENT BELOW

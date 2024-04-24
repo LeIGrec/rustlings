@@ -8,10 +8,18 @@
 // Execute `rustlings hint modules3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+/*
+WRITE UP:
+
+SystemTime et UNIX_EPOCH sont des types de données de la bibliothèque standard de Rust.
+Donc pour les utiliser, il faut les importer dans le scope du programme.
+
+Pour cela chercher sur internet ou la doc
+
+*/
 
 // TODO: Complete this use statement
-use ???
+use std::time::{SystemTime, UNIX_EPOCH};
 
 fn main() {
     match SystemTime::now().duration_since(UNIX_EPOCH) {

@@ -6,14 +6,23 @@
 // Execute `rustlings hint generics2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+/*
+WRITE UP:
 
-struct Wrapper {
-    value: u32,
+Vu que dans les tests on a un u32 et un str, on peut utiliser un type générique pour Wrapper.
+
+On le faire on remplace le type de value par T et on ajoute T dans la signature de la struct Wrapper.
+
+On peut aussi ajouter une méthode new qui prend un paramètre de type T
+
+*/
+
+struct Wrapper<T> {
+    value: T,
 }
 
-impl Wrapper {
-    pub fn new(value: u32) -> Self {
+impl<T> Wrapper<T> {
+    pub fn new(value: T) -> Self {
         Wrapper { value }
     }
 }

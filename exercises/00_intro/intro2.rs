@@ -5,8 +5,16 @@
 // Execute `rustlings hint intro2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+/*
+WRITE UP:
+
+La macro printline!() n'existe pas en Rust. Il faut utiliser println!() pour afficher du texte.
+
+Il manque aussi un ; à la fin.
+
+*/
+
 
 fn main() {
-    printline!("Hello there!")
+    println!("Hello there!");
 }

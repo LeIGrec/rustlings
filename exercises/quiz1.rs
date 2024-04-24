@@ -13,10 +13,23 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+/*
+WRITE UP:
+
+Fallait juste faire un if else pour vérifier si la quantité était supérieure à 40
+et retourner la quantité si c'était le cas, sinon retourner la quantité * 2
+
+*/
+
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(quantity: i32) -> i32 {
+    if quantity > 40 {
+        quantity
+    } else {
+        quantity * 2
+    }
+}
 
 // Don't modify this function!
 #[test]

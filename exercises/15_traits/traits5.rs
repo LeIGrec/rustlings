@@ -7,7 +7,14 @@
 // Execute `rustlings hint traits5` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+/*
+WRITE UP:
+
+Il faut que je change la signature de la fonction `some_func` pour qu'elle prenne un paramètre item d'un des 2 types.
+
+Le faite de mettre `impl SomeTrait + OtherTrait` permet de dire que le paramètre item doit implémenter un des 2 traits SomeTrait/OtherTrait.
+
+*/
 
 pub trait SomeTrait {
     fn some_function(&self) -> bool {
@@ -30,7 +37,7 @@ impl SomeTrait for OtherStruct {}
 impl OtherTrait for OtherStruct {}
 
 // YOU MAY ONLY CHANGE THE NEXT LINE
-fn some_func(item: ??) -> bool {
+fn some_func(item: impl SomeTrait + OtherTrait) -> bool {
     item.some_function() && item.other_function()
 }
 

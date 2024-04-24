@@ -9,7 +9,21 @@
 // Execute `rustlings hint errors6` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+/*
+WRITE UP:
+
+La fonction from_parseint doit juste retourner l'erreur reçue de l'enum ParsePosNonzeroError.
+Puisque qu'on veut que ce soit une erreur sur la conversion donc on choisi ParseIntError.
+
+Modification de la parse_pos_nonzero pour retourner une erreur appropriée au lieu de paniquer.
+
+On veut que si la conversion de s en i64 échoue, on retourne une erreur ParsePosNonzeroError::ParseInt(err).
+
+Donc on peut mettre ça dans un if avec un Err(e) et parse notre s en i64.
+
+On doit convertir de nouveau s car le check de l'erreur ne modifie pas le type de s.
+*/
+
 
 use std::num::ParseIntError;
 
@@ -25,12 +39,20 @@ impl ParsePosNonzeroError {
         ParsePosNonzeroError::Creation(err)
     }
     // TODO: add another error conversion function here.
-    // fn from_parseint...
+    fn from_parseint(err: ParseIntError) -> ParsePosNonzeroError {
+        ParsePosNonzeroError::ParseInt(err)
+    }
 }
 
 fn parse_pos_nonzero(s: &str) -> Result<PositiveNonzeroInteger, ParsePosNonzeroError> {
     // TODO: change this to return an appropriate error instead of panicking
     // when `parse()` returns an error.
+
+    if let Err(e) = s.parse::<i64>() {
+        return Err(ParsePosNonzeroError::from_parseint(e));
+    }
+
+
     let x: i64 = s.parse().unwrap();
     PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_creation)
 }

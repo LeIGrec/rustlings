@@ -10,11 +10,19 @@
 // Execute `rustlings hint using_as` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+/*
+WRITE UP:
+
+values.len() étant un usize il faut le convertir en f64 pour pouvoir diviser
+
+Il y a pas mieux comme solution que de convertir values.len() en f64
+
+*/
 
 fn average(values: &[f64]) -> f64 {
     let total = values.iter().sum::<f64>();
-    total / values.len()
+
+    total / values.len() as f64
 }
 
 fn main() {
