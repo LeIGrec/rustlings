@@ -16,8 +16,13 @@
 /*
 WRITE UP:
 
-Fallait juste faire un if else pour vérifier si la quantité était supérieure à 40
-et retourner la quantité si c'était le cas, sinon retourner la quantité * 2
+Ce code définit une fonction calculate_price_of_apples qui prend en entrée une quantité d'apples (quantity) de type i32 et renvoie le prix total de ces pommes. La logique est la suivante
+
+Si la quantité est supérieure à 40, la fonction renvoie simplement la quantité
+
+Sinon, la fonction multiplie la quantité par 2
+
+Le code contient également un test unitaire verify_test qui vérifie le bon fonctionnement de la fonction calculate_price_of_apples pour différentes valeurs de quantity.
 
 */
 
