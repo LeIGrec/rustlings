@@ -19,12 +19,15 @@
 /*
 WRITE UP:
 
-J'ai modifier le struct ReportCard pour qu'il accepte un type générique T.
-Dans l'impl block, j'ai ajouté une contrainte sur T pour qu'il implémente le trait Display.
+Ce code définit une structure ReportCard qui représente un bulletin scolaire.
 
-J'ai ensuite modifié les tests pour qu'ils utilisent des grades numériques et alphabétiques.
+grade : une valeur générique T représentant la note de l'élève
 
-Et voilà
+student_name : le nom de l'élève sous forme de String
+
+student_age : l'âge de l'élève sous forme de u8
+
+Le code définit également une implémentation de la structure ReportCard qui inclut une méthode print().
 
 */
 
