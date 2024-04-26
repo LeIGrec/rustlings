@@ -5,8 +5,9 @@
 /*
 WRITE UP:
 
-La valeur que "identifier" doit prendre lier au if else de "habitat". 
-Donc soit 1, 2 ou 3. Pas de float ou de STR, il y a pas meilleur solution.
+Ce programme Rust définit une fonction animal_habitat() qui détermine l'habitat d'un animal en fonction de son nom.
+
+La fonction utilise des instructions if-else pour attribuer un identifiant à chaque animal, puis un autre bloc if-else pour définir l'habitat correspondant. 
 */
 
 pub fn animal_habitat(animal: &str) -> &'static str {
