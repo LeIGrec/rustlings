@@ -13,9 +13,13 @@
 /*
 WRITE UP:
 
-values.len() étant un usize il faut le convertir en f64 pour pouvoir diviser
+Ce programme définit une fonction average() qui calcule la moyenne d'une tranche de f64.
 
-Il y a pas mieux comme solution que de convertir values.len() en f64
+Un problème survient lors de la division par values.len() car celui-ci retourne un usize incompatible avec f64. 
+
+La seule solution est de convertir explicitement values.len() en f64 avec as f64 pour permettre la division.
+
+La fonction main() crée un tableau de f64 et appelle average() pour afficher le résultat. Un test unitaire vérifie le bon fonctionnement de average().
 
 */
 
