@@ -8,6 +8,8 @@ WRITE UP:
 
 La macro à était mal définie, il manquait un ; ligne 18
 
+La macro a deux variantes : une sans argument qui affiche un message, et une avec un argument $val qui est affiché dans le message.
+
 */
 
 #[rustfmt::skip]
