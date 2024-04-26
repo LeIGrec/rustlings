@@ -7,9 +7,14 @@
 // for a hint.
 
 /*
+
 WRITE UP:
 
-Pour accéder à un élément d'un tuple, on utilise la syntaxe suivante : tuple.index
+Il faut crée un tuple numbers contenant 1, 2 et 3, puis l'indexation par point pour accéder au deuxième élément (index 1) et le stocker dans second.
+
+Enfin, nous vérifions que second est égal à 2 à l'aide de assert_eq!
+
+Ce test montre l'utilisation des tuples et de l'indexation en Rust
 
 */
 
