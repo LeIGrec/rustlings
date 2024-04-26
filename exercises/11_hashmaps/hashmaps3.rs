@@ -18,17 +18,11 @@
 /*
 WRITE UP:
 
-Le but était de construire un tableau de scores à partir d'une liste de scores de matchs de foot. 
+Ce programme Rust utilise std::collections::HashMap pour construire un tableau des scores d'une compétition de football.
 
-Pour les 2 teams ça marche comme ça :
+Il définit une structure Team et une fonction build_scores_table() qui met à jour les scores de chaque équipe dans un HashMap.
 
-scores.entry(team_1_name.clone())
-cherche une entrée dans la HashMap scores avec la clé team_1_name. 
-Si l'entrée existe, elle est retournée. Sinon, une nouvelle entrée avec cette clé est créée et retournée.
-
-Puis on incrémente les buts marqués et encaissés pour chaque team.
-
-J'ai fait ça comme ça car j'ai découvert le or_insert() qui permet de faire ça en une seule ligne.
+Des tests unitaires vérifient le comportement de la fonction.
 
 */
 
