@@ -6,7 +6,17 @@
 /*
 WRITE UP:
 
+Ce programme implémente un système de file d'attente concurrente en utilisant des threads et des canaux de communication (mpsc::channel). 
 
+La structure Queue contient une longueur et deux vecteurs représentant les deux moitiés de la file d'attente.
+
+La fonction send_tx() crée deux threads qui envoient les éléments de chaque moitié de la file d'attente via le canal d'envoi (tx).
+
+Les références au canal sont clonées en utilisant Arc pour permettre un accès concurrentiel sécurisé.
+
+Dans la fonction main(), un canal est créé et la file d'attente est envoyée aux threads via send_tx().
+
+Le récepteur (rx) récupère les éléments envoyés et vérifie que le nombre total reçu correspond à la longueur de la file d'attente.
 
 */
 use std::sync::mpsc;
