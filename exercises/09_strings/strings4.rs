@@ -10,10 +10,9 @@
 /*
 WRITE UP:
 
-Est-ce que je dois vraiment expliquer ce que je viens de faire? Je ne pense pas.
+Ce script définit deux fonctions pour afficher des chaînes de caractères et des tranches de chaînes.
 
-Mon IDE me donne la valeur de chaque variable, donc je sais si c'est un &str ou un String.
-
+La fonction main() appelle ces fonctions avec divers types de chaînes, montrant comment créer et manipuler des chaînes en Rust.
 
 */
 
