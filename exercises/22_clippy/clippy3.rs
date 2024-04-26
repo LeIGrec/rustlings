@@ -4,12 +4,14 @@
 // No hints.
 
 /*
-My_option étant None on ne peut pas unwrap() dessus
-Donc j'ai commenté la ligne 18
 
-Il manqué une , sur la ligne 23 à la déclaration de my_arr
+Ce programme contenait plusieurs erreurs qui ont été corrigées
 
-Pour swap les valeurs il faut utiliser std::mem::swap() c'est écrit dans le truc d'erreur
+La ligne 23 qui faisait unwrap() sur my_option a été commentée car my_option étant None, il n'était pas possible de le déballer sans risquer une panique.
+
+Une virgule manquait dans la déclaration de my_arr à la ligne 27, ce qui empêchait la compilation.
+
+Pour échanger correctement les valeurs de value_a et value_b, la fonction std::mem::swap() a été utilisée
 
 */
 
