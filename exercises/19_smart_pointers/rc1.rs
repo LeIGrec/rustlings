@@ -13,11 +13,13 @@
 /*
 WRITE UP:
 
-Lorsque que les planètes Saturn, Uranus et Neptune sont crée, de base on leur donné une nouvelle instance de Sun.
-Alors qu'on veut la même instance de Sun pour toutes les planètes. Donc on doit cloner la référence de Sun pour chaque planète.
+Ce programme est une structure Sun et une énumération Planet qui contient une référence partagée (Rc<Sun>) à une instance de Sun. 
 
-Puis ensuite il manque des drop() pour libérer la mémoire de Sun de chaque planète.
+Initialement, chaque planète est créée avec une nouvelle référence à Sun, mais cela doit être modifié pour utiliser la même instance partagée.
 
+La fonction main() crée une instance unique de Sun et la partage entre les différentes planètes en utilisant Rc::clone(). Le comptage des références est vérifié à chaque étape.
+
+Enfin, les planètes sont supprimées individuellement en utilisant drop(), ce qui décrémente le compteur de références correspondant. Lorsque le dernier compteur atteint 1, l'instance de Sun est libérée.
 
 */
 
