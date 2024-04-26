@@ -14,17 +14,13 @@
 /*
 WRITE UP:
 
-Count_iterator en ONE LINER
-    - map.values() : Pour chaque valeur dans le hashmap
-    - filter(|&val| val == &value) : On garde seulement les valeurs qui sont égales à la valeur donnée
-    - count() : On compte le nombre de valeurs qui ont passé le filtre
+Ce programme définit une énumération Progress et deux fonctions count_iterator et count_collection_iterator qui utilisent des itérateurs pour compter le nombre d'occurrences d'un état de progression donné dans un HashMap ou une collection de HashMap.
 
-Count_collection_iterator en ONE LINER
+La fonction count_iterator utilise map.values().filter(|&val| val == &value).count() pour compter le nombre de valeurs égales à value dans le HashMap.
 
-    - collection.iter() : Pour chaque hashmap dans la collection
-    - map(|map| count_iterator(map, value)) : On applique count_iterator sur chaque hashmap
-    - sum() : On somme les résultats de count_iterator
+La fonction count_collection_iterator applique count_iterator à chaque HashMap de la collection et somme les résultats.
 
+Les tests unitaires vérifient le comportement des fonctions pour différents états de progression et comparent les résultats avec des implémentations itératives.
 
 */
 
