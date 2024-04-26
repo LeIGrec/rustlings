@@ -10,11 +10,11 @@
 /*
 WRITE UP:
 
-Pour le vec_loop, on doit *element *= 2 pour chaque élément du vecteur.
+Ce programme Rust définit deux fonctions pour multiplier les éléments d'un vecteur par 2.
 
-J'utilise * pour déréférencer l'élément et le modifier. 
+La fonction vec_loop() modifie le vecteur en place, tandis que vec_map() renvoie un nouveau vecteur. 
 
-Pour vec_map, on doit utiliser la méthode map() pour appliquer une fonction à chaque élément du vecteur.
+Les tests unitaires vérifient le comportement des deux fonctions.
 
 */
 
