@@ -9,11 +9,9 @@
 /*
 WRITE UP:
 
-Vu que dans les tests on a un u32 et un str, on peut utiliser un type générique pour Wrapper.
+Ce programme Rust définit une structure générique Wrapper<T> qui encapsule une valeur de type T. La structure implémente une méthode new() qui crée une nouvelle instance de Wrapper en prenant la valeur en argument.
 
-On le faire on remplace le type de value par T et on ajoute T dans la signature de la struct Wrapper.
-
-On peut aussi ajouter une méthode new qui prend un paramètre de type T
+Les tests unitaires vérifient le comportement de la structure Wrapper, store_u32_in_wrapper() vérifie qu'un entier u32 peut être stocké dans un Wrapper et que sa valeur peut être récupérée correctement.
 
 */
 
