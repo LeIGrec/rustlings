@@ -11,10 +11,9 @@
 /*
 WRITE UP:
 
-SystemTime et UNIX_EPOCH sont des types de données de la bibliothèque standard de Rust.
-Donc pour les utiliser, il faut les importer dans le scope du programme.
+Ce programme Rust utilise std::time pour calculer le temps écoulé depuis l'époque UNIX.
 
-Pour cela chercher sur internet ou la doc
+Il gère les résultats possibles avec match et affiche le nombre de secondes écoulées ou lève un "panic" si le temps système est antérieur à l'époque UNIX.
 
 */
 
