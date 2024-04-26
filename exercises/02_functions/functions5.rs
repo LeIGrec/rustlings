@@ -4,23 +4,16 @@
 // hint.
 
 /*
+
 WRITE UP:
 
+Ce programme définit deux fonctions : main() et square().
 
-En Rust tu as deux façons de retourner une valeur d'une fonction:
-- en utilisant le mot clé return
+La fonction main() appelle square(3) qui calcule le carré de 3 et stocke le résultat dans la variable answer.
 
-fn square(num: i32) -> i32 {
-    return num * num;
-}
-- en utilisant l'expression sans le mot clé return et prend pas de ; à la fin
+main() affiche "The square of 3 is 9" en utilisant la valeur de answer.
 
-fn square(num: i32) -> i32 {
-    num * num
-}
-
-
-J'ai choisi la deuxième option car c'est plus rapide à écrire
+La fonction square() prend un argument num de type i32, le multiplie par lui-même et renvoie le résultat sans utiliser le mot-clé return.
 
 */
 
