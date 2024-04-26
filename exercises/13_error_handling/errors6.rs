@@ -12,16 +12,8 @@
 /*
 WRITE UP:
 
-La fonction from_parseint doit juste retourner l'erreur reçue de l'enum ParsePosNonzeroError.
-Puisque qu'on veut que ce soit une erreur sur la conversion donc on choisi ParseIntError.
+Pas compris celui-ci je l'est fait avec l'IA, je vais lui demander de m'expliquer le code etc.
 
-Modification de la parse_pos_nonzero pour retourner une erreur appropriée au lieu de paniquer.
-
-On veut que si la conversion de s en i64 échoue, on retourne une erreur ParsePosNonzeroError::ParseInt(err).
-
-Donc on peut mettre ça dans un if avec un Err(e) et parse notre s en i64.
-
-On doit convertir de nouveau s car le check de l'erreur ne modifie pas le type de s.
 */
 
 
