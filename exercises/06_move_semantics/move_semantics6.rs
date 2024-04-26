@@ -8,11 +8,11 @@
 /*
 WRITE UP:
     
-La fonction get_char prend ownership de la String data, donc on ne peut plus l'utiliser après. 
-Donc premier fix : get_char(&data); et get_char(data: &String); J'ai réjouter les & pour passer une référence à la fonction get_char
+Ce programme montre comment les références et la propriété fonctionnent en Rust.
 
-Puis la fonction string_uppercase on doit remove les & pour prendre ownership de la String data.
-(Enfin c'est ce que je pense, je suis pas sûr de moi)
+La fonction get_char() emprunte une référence à &data, tandis que string_uppercase() prend la propriété de data.
+
+Cela permet de s'assurer que les données sont utilisées de manière sûre.
 
 */
 
