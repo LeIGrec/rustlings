@@ -8,21 +8,9 @@
 /*
 WRITE UP:
 
-On doit implémenter un enum Message qui contient les variantes suivantes:
-- ChangeColor(u8, u8, u8)
-- Echo(String)
-- Move(Point)
-- Quit
+Ce programme Rust définit une énumération Message avec différentes variantes représentant des messages possibles.
 
-Car on voit ça dans le code ici :
-
-        state.process(Message::ChangeColor(255, 0, 255));
-        state.process(Message::Echo(String::from("Hello world!")));
-        state.process(Message::Move(Point { x: 10, y: 15 }));
-        state.process(Message::Quit);
-
-On doit ensuite implémenter la méthode process() de la structure State qui prend un message en paramètre et qui appelle la méthode correspondante en fonction du message.
-
+Il définit également une structure Point représentant un point dans un espace 2D et une structure State représentant l'état actuel du programme.
 
 */
 
