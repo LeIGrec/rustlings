@@ -11,10 +11,11 @@
 /*
 WRITE UP:
 
-is_international() doit returner un booléen qui indique si le pays d'origine et le pays de destination sont différents.
-Pour le faire on fait juste une comparaison entre les deux champs de la structure.
+Ce programme Rust définit une structure Package représentant un colis postal.
 
-get_fees() doit retourner le coût de l'envoi du colis. Pour le faire on multiplie le poids du colis par le coût par gramme.
+La structure implémente des méthodes pour créer un colis, vérifier s'il est international et calcule les frais de transport.
+
+Des tests unitaires vérifient le comportement de la structure.
 
 */
 
