@@ -8,17 +8,11 @@
 /*
 WRITE UP:
 
-Pour corrige le problème de life time il y a 2 solutions.
+Ce programme Rust définit une structure Book avec deux champs author et title de type String.
 
-La première rajouter le life time à la structure book 
-struct Book<'a> {
-    author: &'a str,
-    title: &'a str,
-}
+Pour résoudre le problème de durée de vie, la solution choisie est de changer le type des champs en String car les String sont allouées sur le tas et n'ont donc pas de problème de durée de vie.
 
-La deuxième solution est de changer le type de author et title en String
-Vu que les String sont des types qui sont alloués sur le tas, il n'y a pas de problème de life time
-Cette solution est plus simple donc je vais la choisir
+Dans la fonction main(), des instances de String sont créées pour name et title, puis utilisées pour initialiser les champs correspondants de book. Enfin, les valeurs de title et author sont affichées.
 
 */
 
