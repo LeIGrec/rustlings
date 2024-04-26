@@ -10,9 +10,13 @@
 /*
 WRITE UP:
 
-Il faut que je change la signature de la fonction `some_func` pour qu'elle prenne un paramètre item d'un des 2 types.
+Ce programme définit deux traits SomeTrait et OtherTrait avec des méthodes par défaut.
 
-Le faite de mettre `impl SomeTrait + OtherTrait` permet de dire que le paramètre item doit implémenter un des 2 traits SomeTrait/OtherTrait.
+Il définit également deux structures SomeStruct et OtherStruct qui implémentent les deux traits.
+
+La signature de la fonction some_func doit être modifiée pour prendre un paramètre item qui implémente soit SomeTrait, soit OtherTrait, en utilisant la syntaxe impl SomeTrait + OtherTrait.
+
+Ce programme illustre l'utilisation des traits en Rust pour définir des comportements communs pour différents types, ainsi que l'utilisation de la syntaxe impl Trait pour spécifier les contraintes sur les types de paramètres de fonction.
 
 */
 
