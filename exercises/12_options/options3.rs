@@ -6,29 +6,12 @@
 /*
 WRITE UP:
 
-⚠️  Compiling of exercises/12_options/options3.rs failed! Please try again. Here's the output:
-error[E0382]: use of partially moved value: `y`
-  --> exercises/12_options/options3.rs:23:5
-   |
-20 |         Some(p) => println!("Co-ordinates are {},{} ", p.x, p.y),
-   |              - value partially moved here
-...
-23 |     y; // Fix without deleting this line.
-   |     ^ value used here after partial move
-   |
-   = note: partial move occurs because value has type `Point`, which does not implement the `Copy` trait
-help: borrow this binding in the pattern to avoid moving the value
-   |
-20 |         Some(ref p) => println!("Co-ordinates are {},{} ", p.x, p.y),
-   |              +++
+Ce programme Rust définit une structure Point et utilise une variable y de type Option<Point> dans la fonction main(). 
 
-error: aborting due to 1 previous error
+Cependant, la variable y n'est pas utilisée après l'expression match.
 
-J'ai juste suivis les instructions de l'erreur et j'ai ajouté le mot clé ref dans le match pour éviter de déplacer la valeur de y.
+Pour corriger ce problème, il suffit d'ajouter un point-virgule ";" à la fin de la ligne y pour indiquer que la variable est utilisée en tant qu'expression, même si sa valeur n'est pas utilisée. Cela éliminera l'avertissement du compileur concernant la variable inutilisée.
 
-ref permet de faire une référence à la valeur sans la déplacer.
-ça ressemble à un pointeur mais ce n'est pas un pointeur.
-Point n'implémente pas le trait Copy donc on peut pas le copier comme ça avec clone().
 */
 
 struct Point {
