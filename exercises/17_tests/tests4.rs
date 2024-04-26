@@ -8,8 +8,10 @@
 /*
 WRITE UP:
 
-Bon ici le plus dur c'était de faire panic le programme quand on essaye de créer un rectangle avec des valeurs négatives
-Pour ce faire il suffit de rajouter le décorateur #[should_panic] ou attribut je ne connais pas le nom au dessus de la fonction de test
+Ce programme définit une structure Rectangle avec une méthode new() qui crée une nouvelle instance en vérifiant que la largeur et la hauteur ne sont pas négatives.
+
+Les tests unitaires vérifient le comportement de la méthode new(), un test valide les valeurs positives, tandis que deux autres tests utilisent l'attribut #[should_panic] pour vérifier que la méthode "panic" correctement avec des valeurs négatives.
+
 
 */
 struct Rectangle {
